@@ -1,0 +1,12 @@
+services:
+  api:
+    build: ./backend
+    ports: ["8001:8001"]
+    environment:
+      PORT: 8001
+  web:
+    build: ./frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8001
+    ports: ["3000:3000"]
+    depends_on: [api]

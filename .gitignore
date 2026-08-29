@@ -1,0 +1,34 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node and Next.js build output
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Local databases and generated logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Local environment and operating-system files
+.env
+.env.*
+!.env.example
+!.env.*.example
+.DS_Store
+
+# Editor and tooling files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
